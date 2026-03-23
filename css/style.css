@@ -88,10 +88,12 @@ a {
 .card_item {
   margin-bottom: 2rem;
   padding: 1rem;
+  overflow: hidden;
 }
 
 .card_item img {
   border-radius: 0.5rem 0.5rem 0 0;
+  transition: all .2s ease;
 }
 
 .card_content {
@@ -188,9 +190,7 @@ a {
     height: 180px;
   }
 
-  .card_item img:hover {
-    transform: translateY(-5px);
-  }
+ 
   .card_content h2 {
     font-size: 1rem;
   }
@@ -236,6 +236,11 @@ a {
 
   .card_item {
     flex-grow: 0;
+  }
+
+   .card_item img:hover {
+    /* transform: translateY(-5px); */
+    transform: scale(1.05);
   }
 
   .card_btn:hover {
